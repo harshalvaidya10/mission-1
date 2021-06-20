@@ -56,13 +56,34 @@ body{
 }
 
 /* Menu styles */
+.explore__menu__container{
+    margin-top: 50px;
+    text-align: center;
+}
+.explore__menu__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0px;
 
+}
 .food__menu__card{
     width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.food__menu__card__description{
+    padding: 20px;
 }
 
 .food__image{
     width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.explore__menu__view__more{
+    justify-content: center;
 }
 /* Navbar */
 
@@ -102,7 +123,7 @@ body{
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        gap: ;
+        gap: 10px;
     }
 
 }
