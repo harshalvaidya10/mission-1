@@ -120,7 +120,7 @@ body{
 .restaurants__flex__row__one{
 
     align-items: baseline;
-    margin-bottom: 4px;
+    margin-bottom: -20px;
 }
 
 .restaurant__1__image,
@@ -129,7 +129,8 @@ body{
 .restaurant__4__image{
 
     width: 100%;
-    height: 100%;
+    height: 75%;
+    border-radius: 4px;
 }
 
 .restaurant__1,
@@ -145,6 +146,70 @@ body{
     width: 100%;
     height: 200px;
 }
+
+/* Email Subscribe */
+
+.email__subscribe__container{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+}
+
+.email__subscribe__content{
+    display: flex;
+    gap: 10px;
+}
+.email__subscribe__input__field{
+    display: flex;
+    align-items: center;
+}
+
+.email__input{
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.email__input::placeholder{
+    color: #bdbcbc;
+}
+
+/* Quote */
+
+.quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      center center / cover no-repeat;
+  }
+  .quote__image__overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote__image__text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
 
 @media (min-width: 768px){
     .navbar{
@@ -217,6 +282,40 @@ body{
         width: 100%;
     }
 
+    .email__subscribe__container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .email__input{
+        width: 300px;
+    }
+
+    .quote__container {
+        height: 300px;
+        width: 100%;
+      }
+
+    .quote__image__overlay {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        border-radius: 13px;
+        background-color: #0a4065;
+        opacity: 49%;
+      }
+      .quote__image__text {
+        color: #fff;
+        z-index: 3;
+        margin: 0 1rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+
+
 }
 
 @media (min-width: 1020px){
@@ -248,5 +347,18 @@ body{
     .container{
         max-width: 1250px;
     }
+
+    
+
+    .restaurant__2,
+    .restaurant__3{
+      width: 300px;
+      height: 260px;
+    }
+    .restaurant__1,
+    .restaurant__4{
+      width: 250px;
+      height: 180px;
+  }
 
 }
